@@ -8,7 +8,7 @@ function main(config) {
         WorldServer = require("./worldserver"),
         Log = require('log'),
         _ = require('underscore'),
-        server = new ws.MultiVersionWebsocketServer(config.port),
+        server = new ws.WebSocketServer(config.port),
         metrics = config.metrics_enabled ? new Metrics(config) : null;
         worlds = [],
         lastTotalPlayers = 0,
@@ -34,7 +34,7 @@ function main(config) {
             log = new Log(Log.INFO); break;
     };
     
-    log.info("Starting BrowserQuest game server...");
+    console.log("Starting BrowserQuest game server...");
     
     server.onConnect(function(connection) {
         var world, // the one in which the player will be spawned
