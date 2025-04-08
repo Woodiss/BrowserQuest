@@ -1,0 +1,8 @@
+services:
+  browserquest:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    container_name: browserquest

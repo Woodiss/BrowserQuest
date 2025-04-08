@@ -1,14 +1,6 @@
-const fs = require('fs');
-const Metrics = require('./metrics');
-const logger = require('./logger');
 
-process.stdout.on('error', function(err) {
-    console.error('Stream error on stdout:', err);
-});
-
-process.stderr.on('error', function(err) {
-    console.error('Stream error on stderr:', err);
-});
+var fs = require('fs'),
+    Metrics = require('./metrics');
 
 
 function main(config) {
@@ -16,7 +8,7 @@ function main(config) {
         WorldServer = require("./worldserver"),
         Log = require('log'),
         _ = require('underscore'),
-        server = new ws.WebSocketServer(config.port),
+        server = new ws.MultiVersionWebsocketServer(config.port),
         metrics = config.metrics_enabled ? new Metrics(config) : null;
         worlds = [],
         lastTotalPlayers = 0,
@@ -33,8 +25,6 @@ function main(config) {
             }
         }, 1000);
     
-    // var log = new Log(Log.INFO); // Default to INFO level if not specified
-    var log = new Log('info', process.stdout);
     switch(config.debug_level) {
         case "error":
             log = new Log(Log.ERROR); break;
@@ -44,7 +34,7 @@ function main(config) {
             log = new Log(Log.INFO); break;
     };
     
-    console.log("Starting BrowserQuest game server...");
+    log.info("Starting BrowserQuest game server...");
     
     server.onConnect(function(connection) {
         var world, // the one in which the player will be spawned

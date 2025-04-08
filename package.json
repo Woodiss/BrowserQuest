@@ -1,16 +1,14 @@
 {
-    "name": "BrowserQuest",
-    "version": "0.0.1",
-    "private": false,
-    "dependencies": {
-        "bison": ">0",
-        "log": "1.3.0",
-        "memcache": "0.3.0",
-        "sanitizer": "0.1.3",
-        "underscore": ">0",
-        "websocket": "^1.0.34"
-    },
-    "devDependencies": {
-        "serve": "^14.2.4"
-    }
+    "name": "BrowserQuest"
+  , "version": "0.0.1"
+  , "private": false 
+  , "dependencies": {
+    "underscore": "1.3.3"
+    , "log": "1.4.0"
+    , "bison": "1.1.1"
+    , "websocket": "1.0.18"
+    , "websocket-server": "https://github.com/ThisIsMissEm/node-websocket-server.git"
+    , "sanitizer": "0.1.3"
+    , "memcache": "0.3.0"
+  }
 }

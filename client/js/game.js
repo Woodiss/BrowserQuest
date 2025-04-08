@@ -107,7 +107,7 @@ function(InfoManager, BubbleManager, Renderer, Map, Animation, Sprite, AnimatedT
             this.map = new Map(!this.renderer.upscaledRendering, this);
     
         	this.map.ready(function() {
-                console.log("Map loaded.");
+                log.info("Map loaded.");
                 var tilesetIndex = self.renderer.upscaledRendering ? 0 : self.renderer.scale - 1;
                 self.renderer.setTileset(self.map.tilesets[tilesetIndex]);
         	});
@@ -345,7 +345,7 @@ function(InfoManager, BubbleManager, Renderer, Map, Animation, Sprite, AnimatedT
         },
     
         loadSprites: function() {
-            console.log("Loading sprites...");
+            log.info("Loading sprites...");
             this.spritesets = [];
             this.spritesets[0] = {};
             this.spritesets[1] = {};
@@ -464,7 +464,7 @@ function(InfoManager, BubbleManager, Renderer, Map, Animation, Sprite, AnimatedT
                     this.pathingGrid[i][j] = this.map.grid[i][j];
                 }
             }
-            console.log("Initialized the pathing grid with static colliding cells.");
+            log.info("Initialized the pathing grid with static colliding cells.");
         },
     
         initEntityGrid: function() {
@@ -475,7 +475,7 @@ function(InfoManager, BubbleManager, Renderer, Map, Animation, Sprite, AnimatedT
                     this.entityGrid[i][j] = {};
                 }
             }
-            console.log("Initialized the entity grid.");
+            log.info("Initialized the entity grid.");
         },
     
         initRenderingGrid: function() {
@@ -486,7 +486,7 @@ function(InfoManager, BubbleManager, Renderer, Map, Animation, Sprite, AnimatedT
                     this.renderingGrid[i][j] = {};
                 }
             }
-            console.log("Initialized the rendering grid.");
+            log.info("Initialized the rendering grid.");
         },
     
         initItemGrid: function() {
@@ -497,7 +497,7 @@ function(InfoManager, BubbleManager, Renderer, Map, Animation, Sprite, AnimatedT
                     this.itemGrid[i][j] = {};
                 }
             }
-            console.log("Initialized the item grid.");
+            log.info("Initialized the item grid.");
         },
     
         /**
@@ -518,7 +518,7 @@ function(InfoManager, BubbleManager, Renderer, Map, Animation, Sprite, AnimatedT
                     self.animatedTiles.push(tile);
                 }
             }, 1);
-            //console.log("Initialized animated tiles.");
+            //log.info("Initialized animated tiles.");
         },
     
         addToRenderingGrid: function(entity, x, y) {
@@ -689,11 +689,11 @@ function(InfoManager, BubbleManager, Renderer, Map, Animation, Sprite, AnimatedT
         start: function() {
             this.tick();
             this.hasNeverStarted = false;
-            console.log("Game loop started.");
+            log.info("Game loop started.");
         },
 
         stop: function() {
-            console.log("Game stopped.");
+            log.info("Game stopped.");
             this.isStopped = true;
         },
     
@@ -739,7 +739,7 @@ function(InfoManager, BubbleManager, Renderer, Map, Animation, Sprite, AnimatedT
             });
             
             this.client.onConnected(function() {
-                console.log("Starting client/server handshake");
+                log.info("Starting client/server handshake");
                 
                 self.player.name = self.username;
                 self.started = true;
@@ -766,7 +766,7 @@ function(InfoManager, BubbleManager, Renderer, Map, Animation, Sprite, AnimatedT
             });
         
             this.client.onWelcome(function(id, name, x, y, hp) {
-                console.log("Received player ID from server : "+ id);
+                log.info("Received player ID from server : "+ id);
                 self.player.id = id;
                 self.playerId = id;
                 // Always accept name received from the server which will
@@ -1017,12 +1017,12 @@ function(InfoManager, BubbleManager, Renderer, Map, Animation, Sprite, AnimatedT
                 });
             
                 self.player.onDeath(function() {
-                    console.log(self.playerId + " is dead");
+                    log.info(self.playerId + " is dead");
                 
                     self.player.stopBlinking();
                     self.player.setSprite(self.sprites["death"]);
                     self.player.animate("death", 120, 1, function() {
-                        console.log(self.playerId + " was removed");
+                        log.info(self.playerId + " was removed");
                     
                         self.removeEntity(self.player);
                         self.removeFromRenderingGrid(self.player, self.player.gridX, self.player.gridY);
@@ -1067,12 +1067,12 @@ function(InfoManager, BubbleManager, Renderer, Map, Animation, Sprite, AnimatedT
                 });
             
                 self.client.onSpawnItem(function(item, x, y) {
-                    console.log("Spawned " + Types.getKindAsString(item.kind) + " (" + item.id + ") at "+x+", "+y);
+                    log.info("Spawned " + Types.getKindAsString(item.kind) + " (" + item.id + ") at "+x+", "+y);
                     self.addItem(item, x, y);
                 });
             
                 self.client.onSpawnChest(function(chest, x, y) {
-                    console.log("Spawned chest (" + chest.id + ") at "+x+", "+y);
+                    log.info("Spawned chest (" + chest.id + ") at "+x+", "+y);
                     chest.setSprite(self.sprites[chest.getSpriteName()]);
                     chest.setGridPosition(x, y);
                     chest.setAnimation("idle_down", 150);
@@ -1082,7 +1082,7 @@ function(InfoManager, BubbleManager, Renderer, Map, Animation, Sprite, AnimatedT
                         chest.stopBlinking();
                         chest.setSprite(self.sprites["death"]);
                         chest.setAnimation("death", 120, 1, function() {
-                            console.log(chest.id + " was removed");
+                            log.info(chest.id + " was removed");
                             self.removeEntity(chest);
                             self.removeFromRenderingGrid(chest, chest.gridX, chest.gridY);
                             self.previousClickPosition = {};
@@ -1172,7 +1172,7 @@ function(InfoManager, BubbleManager, Renderer, Map, Animation, Sprite, AnimatedT
                                     });
 
                                     entity.onDeath(function() {
-                                        console.log(entity.id + " is dead");
+                                        log.info(entity.id + " is dead");
                                 
                                         if(entity instanceof Mob) {
                                             // Keep track of where mobs die in order to spawn their dropped items
@@ -1183,7 +1183,7 @@ function(InfoManager, BubbleManager, Renderer, Map, Animation, Sprite, AnimatedT
                                         entity.isDying = true;
                                         entity.setSprite(self.sprites[entity instanceof Mobs.Rat ? "rat" : "death"]);
                                         entity.animate("death", 120, 1, function() {
-                                            console.log(entity.id + " was removed");
+                                            log.info(entity.id + " was removed");
 
                                             self.removeEntity(entity);
                                             self.removeFromRenderingGrid(entity, entity.gridX, entity.gridY);
@@ -1237,7 +1237,7 @@ function(InfoManager, BubbleManager, Renderer, Map, Animation, Sprite, AnimatedT
                     var entity = self.getEntityById(entityId);
             
                     if(entity) {
-                        console.log("Despawning " + Types.getKindAsString(entity.kind) + " (" + entity.id+ ")");
+                        log.info("Despawning " + Types.getKindAsString(entity.kind) + " (" + entity.id+ ")");
                         
                         if(entity.gridX === self.previousClickPosition.x
                         && entity.gridY === self.previousClickPosition.y) {

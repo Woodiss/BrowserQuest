@@ -16,7 +16,7 @@ define(['area'], function(Area) {
             
             var loadSoundFiles = function() {
                 var counter = _.size(self.soundNames);
-                console.log("Loading sound files...");
+                log.info("Loading sound files...");
                 _.each(self.soundNames, function(name) { self.loadSound(name, function() {
                         counter -= 1;
                         if(counter === 0) {
@@ -30,7 +30,7 @@ define(['area'], function(Area) {
             
             var loadMusicFiles = function() {
                 if(!self.game.renderer.mobile) { // disable music on mobile devices
-                    console.log("Loading music files...");
+                    log.info("Loading music files...");
                     // Load the village music first, as players always start here
                     self.loadMusic(self.musicNames.shift(), function() {
                         // Then, load all the other music files
