@@ -2,6 +2,14 @@ const fs = require('fs');
 const Metrics = require('./metrics');
 const logger = require('./logger');
 
+process.stdout.on('error', function(err) {
+    console.error('Stream error on stdout:', err);
+});
+
+process.stderr.on('error', function(err) {
+    console.error('Stream error on stderr:', err);
+});
+
 
 function main(config) {
     var ws = require("./ws"),
