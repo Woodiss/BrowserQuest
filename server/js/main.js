@@ -1,6 +1,6 @@
-
-var fs = require('fs'),
-    Metrics = require('./metrics');
+const fs = require('fs');
+const Metrics = require('./metrics');
+const logger = require('./logger');
 
 
 function main(config) {
@@ -25,6 +25,8 @@ function main(config) {
             }
         }, 1000);
     
+    // var log = new Log(Log.INFO); // Default to INFO level if not specified
+    var log = new Log('info', process.stdout);
     switch(config.debug_level) {
         case "error":
             log = new Log(Log.ERROR); break;

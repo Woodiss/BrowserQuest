@@ -5,7 +5,8 @@ const url = require("url");
 const Utils = require("./utils");
 const _ = require("underscore");
 const BISON = require("bison");
-const log = require("log");
+// const log = require("log");
+const log = require("./logger");
 const WS = {};
 const useBison = false;
 
@@ -128,7 +129,7 @@ WS.WebSocketServer = Server.extend({
     });
 
     httpServer.listen(port, function () {
-      console.log("Server is listening on port " + port);
+      log.info("Server is listening on port " + port);
     });
 
     const wsServer = new WebSocket({
