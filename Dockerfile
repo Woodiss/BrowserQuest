@@ -1,20 +1,19 @@
-# Utiliser l'image Node.js officielle comme base
-FROM node:16
+FROM node:14
 
-# Définir le répertoire de travail dans le conteneur
 WORKDIR /app
 
-# Copier les fichiers package.json et package-lock.json pour installer les dépendances
-COPY package*.json ./
+# Copier les fichiers package.json et package-lock.json
+COPY package.json ./
+COPY package-lock.json* ./
 
-# Installer les dépendances du projet
+# Installer les dépendances
 RUN npm install
 
-# Copier tout le code source du projet dans le conteneur
+# Copier le reste du code source
 COPY . .
 
-# Exposer le port sur lequel l'application écoute (par défaut, BrowserQuest utilise le port 8080)
-EXPOSE 8080
+# Exposition du port du serveur
+EXPOSE 8000
 
-# Démarrer l'application
-CMD ["npm", "start"]
+# Commande pour démarrer le serveur
+CMD ["node", "server/js/main.js"]
