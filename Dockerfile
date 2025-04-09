@@ -1,8 +1,10 @@
-FROM node:14
+# Dockerfile
+FROM node:0.10.48
 
+# Crée un dossier de travail dans le conteneur
 WORKDIR /app
 
-# Copier les fichiers package.json et package-lock.json
+# # Copier les fichiers package.json et package-lock.json
 COPY package.json ./
 COPY package-lock.json* ./
 
