@@ -1,47 +1,22 @@
 version: "3.9"
 
 services:
-  browserquest1:
-    build: .
-    container_name: browserquest1
+  browserquest:
+    image: browserquest-app
     environment:
       - PORT=8000
-    expose:
-      - "8000"
-    volumes:
-      - .:/app
-
-  browserquest2:
-    build: .
-    container_name: browserquest2
-    environment:
-      - PORT=8000
-    expose:
-      - "8000"
-    volumes:
-      - .:/app
-      - /app/node_modules
-
-  browserquest3:
-    build: .
-    container_name: browserquest3
-    environment:
-      - PORT=8000
-    expose:
-      - "8000"
+    deploy:
+      replicas: 3
     volumes:
       - .:/app
 
   nginx:
     image: nginx:latest
-    container_name: nginx
     ports:
-      - "3000:3000"   # Sert le client du jeu
-      - "8080:8080"   # Proxy WebSocket
+      - "3000:3000"
+      - "8080:8080"
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
       - ./client:/usr/share/nginx/html:ro
     depends_on:
-      - browserquest1
-      - browserquest2
-      - browserquest3
+      - browserquest
