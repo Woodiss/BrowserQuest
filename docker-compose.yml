@@ -23,17 +23,6 @@ services:
       - .:/app
       - /app/node_modules
 
-  browserquest3:
-    build: .
-    container_name: browserquest3
-    environment:
-      - PORT=8000
-    expose:
-      - "8000"
-    volumes:
-      - .:/app
-      - /app/node_modules
-
   nginx:
     image: nginx:latest
     container_name: nginx
@@ -46,4 +35,13 @@ services:
     depends_on:
       - browserquest1
       - browserquest2
-      - browserquest3
+
+  client:
+    image: nginx:alpine
+    container_name: client
+    volumes:
+      - ./client:/usr/share/nginx/html
+    ports:
+      - "3001:80"
+      - "3002:80"
+      - "3003:80"
