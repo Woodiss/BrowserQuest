@@ -51,9 +51,9 @@ docker-compose up --build
 - **Système de sécurité automatisé (type fail2ban)**
   > Objectif : détecter les comportements suspects (flood, brute-force...) et bloquer les IP via un container dédié.
   > Idée : fail2ban dans un container relié à des logs exposés par les autres services.
-  > Statut : prototype en cours mais non finalisé.
+  > Statut : prototype en cours mais non finalisé. (check branch DP)
 
 - **Détection active des crash serveurs pour migration transparente**
   > Objectif : supervision continue + migration automatique des joueurs en cas de panne.
   > Idée : observer les connexions WebSocket côté client et re-router sur un autre serveur sans écran de chargement.
-  > Statut : partiellement implémenté via reconnexion auto, mais pas 100% seamless.
+  > Statut : testé, mais trop complexe à intégrer dans les délais impartis.
