@@ -36,6 +36,7 @@ services:
       - browserquest1
       - browserquest2
 
+  # Possibilité de lancer 3 instances pour simplifier le test du load balancer
   client:
     image: nginx:alpine
     container_name: client
