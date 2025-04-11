@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: browserquest
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: browserquest
+  template:
+    metadata:
+      labels:
+        app: browserquest
+    spec:
+      containers:
+      - name: browserquest
+        image: browserquest
+        ports:
+        - containerPort: 8000
