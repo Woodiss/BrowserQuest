@@ -4,4 +4,5 @@ build.txt
 client/audio/music
 .DS_Store
 *.swp
+*.zip
 docker-image.tar
