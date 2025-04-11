@@ -1,4 +1,5 @@
 
+var Entity = require('./entity');
 var cls = require("./lib/class"),
     Messages = require("./message"),
     Utils = require("./utils"),
