@@ -60,7 +60,7 @@ module.exports = World = cls.Class.extend({
         });
         
         this.onPlayerEnter(function(player) {
-            console.log(player.name + " has joined "+ self.id);
+            log.info(player.name + " has joined "+ self.id);
             
             if(!player.hasEnteredGame) {
                 self.incrementPlayerCount();
@@ -109,7 +109,7 @@ module.exports = World = cls.Class.extend({
             });
     
             player.onExit(function() {
-                console.log(player.name + " has left the game.");
+                log.info(player.name + " has left the game.");
                 self.removePlayer(player);
                 self.decrementPlayerCount();
                 
@@ -202,7 +202,7 @@ module.exports = World = cls.Class.extend({
             }
         }, 1000 / this.ups);
         
-        console.log(""+this.id+" created (capacity: "+this.maxPlayers+" players).");
+        log.info(""+this.id+" created (capacity: "+this.maxPlayers+" players).");
     },
     
     setUpdatesPerSecond: function(ups) {
@@ -352,7 +352,7 @@ module.exports = World = cls.Class.extend({
         this.players[player.id] = player;
         this.outgoingQueues[player.id] = [];
         
-        //console.log("Added player : " + player.id);
+        //log.info("Added player : " + player.id);
     },
     
     removePlayer: function(player) {

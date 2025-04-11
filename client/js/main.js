@@ -158,7 +158,7 @@ define(['jquery', 'app'], function($, App) {
             $('#resize-check').bind("webkitTransitionEnd", app.resizeUi.bind(app));
             $('#resize-check').bind("oTransitionEnd", app.resizeUi.bind(app));
         
-            console.log("App initialized.");
+            log.info("App initialized.");
         
             initGame();
         });
