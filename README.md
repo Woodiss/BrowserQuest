@@ -41,3 +41,19 @@ cd browserquest
 docker-compose up --build
 ```
 
+## 🔍 Pistes explorées non retenues dans la version finale
+
+- **Système de sessions persistantes entre serveurs**
+  > Objectif : permettre à un joueur de reconnecter automatiquement à un autre serveur après un crash sans perte de données.
+  > Approche envisagée : centralisation des données de session dans un conteneur Memcached.
+  > Statut : testé, mais trop complexe à intégrer dans les délais impartis.
+
+- **Système de sécurité automatisé (type fail2ban)**
+  > Objectif : détecter les comportements suspects (flood, brute-force...) et bloquer les IP via un container dédié.
+  > Idée : fail2ban dans un container relié à des logs exposés par les autres services.
+  > Statut : prototype en cours mais non finalisé.
+
+- **Détection active des crash serveurs pour migration transparente**
+  > Objectif : supervision continue + migration automatique des joueurs en cas de panne.
+  > Idée : observer les connexions WebSocket côté client et re-router sur un autre serveur sans écran de chargement.
+  > Statut : partiellement implémenté via reconnexion auto, mais pas 100% seamless.
