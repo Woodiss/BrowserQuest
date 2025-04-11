@@ -8,11 +8,11 @@
 
 | Nom         | Prénom       | GitHub                                      |
 |-------------|--------------|---------------------------------------------|
-| Descarpentries | Stéphane | [github.com/alicedupont](https://github.com/Woodiss) |
-| Amaury | Sanchez | [github.com/thomasmartin](https://github.com/Amaury057) |
-| Christopher | DE PASQUAL | [github.com/camillelefevre](https://github.com/christopherDEPASQUAL) |
-| Devanandhan | Codandabany | [github.com/hugobernard](https://github.com/MrDevaa) |
-| Adrien  | Allard (Malade)| [github.com/claramoreau](https://github.com/The-Leyn) |
+| Descarpentries | Stéphane | [github.com/Woodiss](https://github.com/Woodiss) |
+| Amaury | Sanchez | [github.com/Amaury057](https://github.com/Amaury057) |
+| Christopher | DE PASQUAL | [github.com/christopherDEPASQUAL](https://github.com/christopherDEPASQUAL) |
+| Devanandhan | Codandabany | [github.com/MrDevaa](https://github.com/MrDevaa) |
+| Adrien  | Allard (Malade)| [github.com/The-Leyn](https://github.com/The-Leyn) |
 
 ---
 
@@ -22,6 +22,7 @@
 - Lancer plusieurs serveurs de jeu (`browserquest1`, `browserquest2`, etc.).
 - Utiliser **NGINX comme Load Balancer** pour répartir les connexions.
 - Gérer automatiquement le **failover**
+- Ajout d'une sécurité: limite le nombre de connexion par IP
 
 ---
 
