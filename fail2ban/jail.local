@@ -1,0 +1,8 @@
+[browserquest]
+enabled = true
+filter = browserquest
+logpath = /var/log/node/node.log
+maxretry = 3
+findtime = 600
+bantime = 3600
+port = 8000

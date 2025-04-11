@@ -44,6 +44,8 @@ function main(config) {
     server.onConnect(function(connection) {
         // Vérification de sécurité
         if (!security.canConnect(connection)) {
+            var ip = connection.remoteAddress;
+            console.warn("Unauthorized login attempt from " + ip);
             console.log("Connexion refusée");
             
             // Tentative de fermer proprement la connexion selon le type de bibliothèque
@@ -90,7 +92,6 @@ function main(config) {
                 }
             };
         
-        // Le reste du code reste identique...
         if (metrics) {
             metrics.getOpenWorldCount(function(open_world_count) {
                 world = _.min(_.first(worlds, open_world_count), function(w) { return w.playerCount; });

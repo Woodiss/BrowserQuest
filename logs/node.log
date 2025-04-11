@@ -1,0 +1,370 @@
+[Fri Apr 11 2025 11:33:47 GMT+0000 (UTC)] INFO Starting BrowserQuest game server...
+path.exists is now called `fs.exists`.
+[Fri Apr 11 2025 11:33:47 GMT+0000 (UTC)] INFO world1 created (capacity: 200 players).
+[Fri Apr 11 2025 11:33:47 GMT+0000 (UTC)] INFO world2 created (capacity: 200 players).
+[Fri Apr 11 2025 11:33:47 GMT+0000 (UTC)] INFO world3 created (capacity: 200 players).
+[Fri Apr 11 2025 11:33:47 GMT+0000 (UTC)] INFO world4 created (capacity: 200 players).
+[Fri Apr 11 2025 11:33:47 GMT+0000 (UTC)] INFO world5 created (capacity: 200 players).
+[Fri Apr 11 2025 11:33:47 GMT+0000 (UTC)] INFO Server is listening on port 8000
+[Security] IP non détectable, connexion autorisée par défaut
+[Fri Apr 11 2025 11:37:22 GMT+0000 (UTC)] DEBUG Received: 0,dp,21,60
+[Fri Apr 11 2025 11:37:22 GMT+0000 (UTC)] INFO dp has joined world1
+[Fri Apr 11 2025 11:37:22 GMT+0000 (UTC)] DEBUG Received: 20,924,925,927,932,933,1020,1021,1022,1120,1121,1122,1220,1221,1222,1320,1321,1322,72181,72182,72183,72184,84195,87195,815222,818209,837200,841195,847195
+[Fri Apr 11 2025 11:37:22 GMT+0000 (UTC)] DEBUG Pushed 28 new spawns to 5210
+[Fri Apr 11 2025 11:37:32 GMT+0000 (UTC)] DEBUG Received: 11,Je veux juste faire un testt
+[Fri Apr 11 2025 11:37:35 GMT+0000 (UTC)] DEBUG Received: 4,19,217
+[Fri Apr 11 2025 11:37:35 GMT+0000 (UTC)] DEBUG dp is moving to (19, 217).
+[Fri Apr 11 2025 11:37:36 GMT+0000 (UTC)] DEBUG Received: 26,1
+[Fri Apr 11 2025 11:37:36 GMT+0000 (UTC)] DEBUG Received: 21
+[Fri Apr 11 2025 11:37:36 GMT+0000 (UTC)] DEBUG group diff: 0-16,1-16,5-23
+[Fri Apr 11 2025 11:37:36 GMT+0000 (UTC)] DEBUG Received: 20,929,11920,11921,12120,12121,810235
+[Fri Apr 11 2025 11:37:36 GMT+0000 (UTC)] DEBUG Pushed 6 new spawns to 5210
+[Fri Apr 11 2025 11:38:06 GMT+0000 (UTC)] INFO dp has left the game.
+[Fri Apr 11 2025 11:38:09 GMT+0000 (UTC)] DEBUG Removed warrior : 5210
+[Security] IP non détectable, connexion autorisée par défaut
+[Fri Apr 11 2025 12:42:45 GMT+0000 (UTC)] DEBUG Received: 0,dp,21,60
+[Fri Apr 11 2025 12:42:45 GMT+0000 (UTC)] INFO dp has joined world1
+[Fri Apr 11 2025 12:42:46 GMT+0000 (UTC)] DEBUG Received: 20,927,929,1020,1021,1022,1120,1121,1122,1220,1221,1222,1320,1321,1322,11920,11921,12120,12121,810235,815222,818209
+[Fri Apr 11 2025 12:42:46 GMT+0000 (UTC)] DEBUG Pushed 21 new spawns to 5571
+[Fri Apr 11 2025 12:42:47 GMT+0000 (UTC)] DEBUG Received: 4,21,223
+[Fri Apr 11 2025 12:42:47 GMT+0000 (UTC)] DEBUG dp is moving to (21, 223).
+[Fri Apr 11 2025 12:42:47 GMT+0000 (UTC)] DEBUG Received: 26,4
+[Fri Apr 11 2025 12:42:49 GMT+0000 (UTC)] DEBUG Received: 4,23,220
+[Fri Apr 11 2025 12:42:49 GMT+0000 (UTC)] DEBUG dp is moving to (23, 220).
+[Fri Apr 11 2025 12:42:51 GMT+0000 (UTC)] DEBUG Received: 4,21,216
+[Fri Apr 11 2025 12:42:51 GMT+0000 (UTC)] DEBUG dp is moving to (21, 216).
+[Fri Apr 11 2025 12:42:51 GMT+0000 (UTC)] DEBUG Received: 21
+[Fri Apr 11 2025 12:42:51 GMT+0000 (UTC)] DEBUG group diff: 0-19,1-19
+[Fri Apr 11 2025 12:42:51 GMT+0000 (UTC)] DEBUG Received: 20,924,925,932,933,72181,72182,72183,72184,84195,87195,837200,841195,847195
+[Fri Apr 11 2025 12:42:51 GMT+0000 (UTC)] DEBUG Pushed 13 new spawns to 5571
+[Fri Apr 11 2025 12:42:53 GMT+0000 (UTC)] DEBUG Received: 4,20,208
+[Fri Apr 11 2025 12:42:53 GMT+0000 (UTC)] DEBUG dp is moving to (20, 208).
+[Fri Apr 11 2025 12:42:54 GMT+0000 (UTC)] DEBUG Received: 26,1
+[Fri Apr 11 2025 12:42:55 GMT+0000 (UTC)] DEBUG Received: 4,20,205
+[Fri Apr 11 2025 12:42:55 GMT+0000 (UTC)] DEBUG dp is moving to (20, 205).
+[Fri Apr 11 2025 12:42:59 GMT+0000 (UTC)] DEBUG Received: 4,9,204
+[Fri Apr 11 2025 12:42:59 GMT+0000 (UTC)] DEBUG dp is moving to (9, 204).
+[Fri Apr 11 2025 12:43:00 GMT+0000 (UTC)] DEBUG Received: 21
+[Fri Apr 11 2025 12:43:00 GMT+0000 (UTC)] DEBUG group diff: 0-18,1-18,5-23
+[Fri Apr 11 2025 12:43:02 GMT+0000 (UTC)] DEBUG Received: 5,4,201,925
+[Fri Apr 11 2025 12:43:02 GMT+0000 (UTC)] DEBUG dp is moving to (4, 201).
+[Fri Apr 11 2025 12:43:03 GMT+0000 (UTC)] DEBUG Received: 12,925
+[Fri Apr 11 2025 12:43:03 GMT+0000 (UTC)] DEBUG Removed sword2 : 925
+[Fri Apr 11 2025 12:43:03 GMT+0000 (UTC)] DEBUG dp equips sword2
+[Fri Apr 11 2025 12:43:06 GMT+0000 (UTC)] DEBUG Received: 4,6,192
+[Fri Apr 11 2025 12:43:06 GMT+0000 (UTC)] DEBUG dp is moving to (6, 192).
+[Fri Apr 11 2025 12:43:07 GMT+0000 (UTC)] DEBUG Received: 21
+[Fri Apr 11 2025 12:43:07 GMT+0000 (UTC)] DEBUG group diff: 0-17,1-17
+[Fri Apr 11 2025 12:43:07 GMT+0000 (UTC)] DEBUG Received: 20,1540,1541,78158,78159,78160,78161,78162,78164,78165
+[Fri Apr 11 2025 12:43:07 GMT+0000 (UTC)] DEBUG Pushed 9 new spawns to 5571
+[Fri Apr 11 2025 12:43:09 GMT+0000 (UTC)] DEBUG Received: 4,6,180
+[Fri Apr 11 2025 12:43:09 GMT+0000 (UTC)] DEBUG dp is moving to (6, 180).
+[Fri Apr 11 2025 12:43:09 GMT+0000 (UTC)] DEBUG Received: 26,9
+[Fri Apr 11 2025 12:43:10 GMT+0000 (UTC)] DEBUG Received: 21
+[Fri Apr 11 2025 12:43:10 GMT+0000 (UTC)] DEBUG group diff: 0-16,1-16
+[Fri Apr 11 2025 12:43:10 GMT+0000 (UTC)] DEBUG Received: 20,1640,1641,74141,74142,74143,74144,74147,74148,74149,74152,78138,78139,78145,78153,78155
+[Fri Apr 11 2025 12:43:10 GMT+0000 (UTC)] DEBUG Pushed 15 new spawns to 5571
+[Fri Apr 11 2025 12:43:12 GMT+0000 (UTC)] DEBUG Received: 7,78161
+[Fri Apr 11 2025 12:43:12 GMT+0000 (UTC)] DEBUG Received: 8,78161
+[Fri Apr 11 2025 12:43:12 GMT+0000 (UTC)] DEBUG 78161 is now attacking 5571
+[Fri Apr 11 2025 12:43:12 GMT+0000 (UTC)] DEBUG Received: 9,78161
+[Fri Apr 11 2025 12:43:13 GMT+0000 (UTC)] DEBUG Received: 8,78161
+[Fri Apr 11 2025 12:43:13 GMT+0000 (UTC)] DEBUG Received: 9,78161
+[Fri Apr 11 2025 12:43:14 GMT+0000 (UTC)] DEBUG Received: 8,78161
+[Fri Apr 11 2025 12:43:14 GMT+0000 (UTC)] DEBUG Received: 9,78161
+[Fri Apr 11 2025 12:43:15 GMT+0000 (UTC)] DEBUG Received: 8,78161
+[Fri Apr 11 2025 12:43:15 GMT+0000 (UTC)] DEBUG Received: 9,78161
+[Fri Apr 11 2025 12:43:15 GMT+0000 (UTC)] DEBUG Received: 8,78161
+[Fri Apr 11 2025 12:43:15 GMT+0000 (UTC)] DEBUG Received: 9,78161
+[Fri Apr 11 2025 12:43:16 GMT+0000 (UTC)] DEBUG Received: 8,78161
+[Fri Apr 11 2025 12:43:16 GMT+0000 (UTC)] DEBUG Received: 9,78161
+[Fri Apr 11 2025 12:43:17 GMT+0000 (UTC)] DEBUG Received: 8,78161
+[Fri Apr 11 2025 12:43:17 GMT+0000 (UTC)] DEBUG 5571 REMOVED ATTACKER 78161
+[Fri Apr 11 2025 12:43:17 GMT+0000 (UTC)] DEBUG Removed bat : 78161
+[Fri Apr 11 2025 12:43:17 GMT+0000 (UTC)] DEBUG Received: 9,78161
+[Fri Apr 11 2025 12:43:17 GMT+0000 (UTC)] ERROR Unknown entity : 78161
+[Fri Apr 11 2025 12:43:19 GMT+0000 (UTC)] DEBUG Received: 5,9,178,936
+[Fri Apr 11 2025 12:43:19 GMT+0000 (UTC)] DEBUG dp is moving to (9, 178).
+[Fri Apr 11 2025 12:43:19 GMT+0000 (UTC)] DEBUG Received: 12,936
+[Fri Apr 11 2025 12:43:19 GMT+0000 (UTC)] DEBUG Removed flask : 936
+[Fri Apr 11 2025 12:43:20 GMT+0000 (UTC)] DEBUG Received: 4,16,175
+[Fri Apr 11 2025 12:43:20 GMT+0000 (UTC)] DEBUG dp is moving to (16, 175).
+[Fri Apr 11 2025 12:43:21 GMT+0000 (UTC)] DEBUG Received: 7,78158
+[Fri Apr 11 2025 12:43:21 GMT+0000 (UTC)] DEBUG Received: 8,78158
+[Fri Apr 11 2025 12:43:21 GMT+0000 (UTC)] DEBUG 78158 is now attacking 5571
+[Fri Apr 11 2025 12:43:21 GMT+0000 (UTC)] DEBUG Received: 9,78158
+[Fri Apr 11 2025 12:43:22 GMT+0000 (UTC)] DEBUG Received: 8,78158
+[Fri Apr 11 2025 12:43:22 GMT+0000 (UTC)] DEBUG Received: 9,78158
+[Fri Apr 11 2025 12:43:23 GMT+0000 (UTC)] DEBUG Received: 8,78158
+[Fri Apr 11 2025 12:43:23 GMT+0000 (UTC)] DEBUG Received: 9,78158
+[Fri Apr 11 2025 12:43:24 GMT+0000 (UTC)] DEBUG Received: 8,78158
+[Fri Apr 11 2025 12:43:24 GMT+0000 (UTC)] DEBUG Received: 9,78158
+[Fri Apr 11 2025 12:43:25 GMT+0000 (UTC)] DEBUG Received: 8,78158
+[Fri Apr 11 2025 12:43:25 GMT+0000 (UTC)] DEBUG Received: 9,78158
+[Fri Apr 11 2025 12:43:25 GMT+0000 (UTC)] DEBUG Received: 8,78158
+[Fri Apr 11 2025 12:43:25 GMT+0000 (UTC)] DEBUG Received: 9,78158
+[Fri Apr 11 2025 12:43:26 GMT+0000 (UTC)] DEBUG Received: 8,78158
+[Fri Apr 11 2025 12:43:26 GMT+0000 (UTC)] DEBUG Received: 9,78158
+[Fri Apr 11 2025 12:43:27 GMT+0000 (UTC)] DEBUG Received: 8,78158
+[Fri Apr 11 2025 12:43:27 GMT+0000 (UTC)] DEBUG Received: 9,78158
+[Fri Apr 11 2025 12:43:28 GMT+0000 (UTC)] DEBUG Received: 8,78158
+[Fri Apr 11 2025 12:43:28 GMT+0000 (UTC)] DEBUG Received: 9,78158
+[Fri Apr 11 2025 12:43:29 GMT+0000 (UTC)] DEBUG Received: 8,78158
+[Fri Apr 11 2025 12:43:29 GMT+0000 (UTC)] DEBUG 5571 REMOVED ATTACKER 78158
+[Fri Apr 11 2025 12:43:29 GMT+0000 (UTC)] DEBUG Removed bat : 78158
+[Fri Apr 11 2025 12:43:30 GMT+0000 (UTC)] DEBUG Received: 4,12,173
+[Fri Apr 11 2025 12:43:30 GMT+0000 (UTC)] DEBUG dp is moving to (12, 173).
+[Fri Apr 11 2025 12:43:32 GMT+0000 (UTC)] DEBUG Received: 4,16,170
+[Fri Apr 11 2025 12:43:32 GMT+0000 (UTC)] DEBUG dp is moving to (16, 170).
+[Fri Apr 11 2025 12:43:33 GMT+0000 (UTC)] DEBUG Received: 4,15,168
+[Fri Apr 11 2025 12:43:33 GMT+0000 (UTC)] DEBUG dp is moving to (15, 168).
+[Fri Apr 11 2025 12:43:33 GMT+0000 (UTC)] DEBUG Received: 21
+[Fri Apr 11 2025 12:43:33 GMT+0000 (UTC)] DEBUG group diff: 0-15,1-15
+[Fri Apr 11 2025 12:43:33 GMT+0000 (UTC)] DEBUG Received: 20,1430,1431,73125,78124,78126,78127,78129,78134,78135,78137
+[Fri Apr 11 2025 12:43:33 GMT+0000 (UTC)] DEBUG Pushed 10 new spawns to 5571
+[Fri Apr 11 2025 12:43:36 GMT+0000 (UTC)] DEBUG Received: 7,78155
+[Fri Apr 11 2025 12:43:36 GMT+0000 (UTC)] DEBUG Received: 8,78155
+[Fri Apr 11 2025 12:43:36 GMT+0000 (UTC)] DEBUG 78155 is now attacking 5571
+[Fri Apr 11 2025 12:43:36 GMT+0000 (UTC)] DEBUG Received: 9,78155
+[Fri Apr 11 2025 12:43:37 GMT+0000 (UTC)] DEBUG Received: 8,78155
+[Fri Apr 11 2025 12:43:37 GMT+0000 (UTC)] DEBUG Received: 9,78155
+[Fri Apr 11 2025 12:43:38 GMT+0000 (UTC)] DEBUG Received: 8,78155
+[Fri Apr 11 2025 12:43:38 GMT+0000 (UTC)] DEBUG Received: 9,78155
+[Fri Apr 11 2025 12:43:39 GMT+0000 (UTC)] DEBUG Received: 8,78155
+[Fri Apr 11 2025 12:43:39 GMT+0000 (UTC)] DEBUG Received: 9,78155
+[Fri Apr 11 2025 12:43:40 GMT+0000 (UTC)] DEBUG Received: 8,78155
+[Fri Apr 11 2025 12:43:40 GMT+0000 (UTC)] DEBUG Received: 9,78155
+[Fri Apr 11 2025 12:43:40 GMT+0000 (UTC)] DEBUG Received: 8,78155
+[Fri Apr 11 2025 12:43:40 GMT+0000 (UTC)] DEBUG Received: 9,78155
+[Fri Apr 11 2025 12:43:41 GMT+0000 (UTC)] DEBUG Received: 8,78155
+[Fri Apr 11 2025 12:43:41 GMT+0000 (UTC)] DEBUG Received: 9,78155
+[Fri Apr 11 2025 12:43:42 GMT+0000 (UTC)] DEBUG Received: 8,78155
+[Fri Apr 11 2025 12:43:42 GMT+0000 (UTC)] DEBUG 5571 REMOVED ATTACKER 78155
+[Fri Apr 11 2025 12:43:42 GMT+0000 (UTC)] DEBUG Removed bat : 78155
+[Fri Apr 11 2025 12:43:50 GMT+0000 (UTC)] DEBUG Received: 4,10,160
+[Fri Apr 11 2025 12:43:50 GMT+0000 (UTC)] DEBUG dp is moving to (10, 160).
+[Fri Apr 11 2025 12:43:52 GMT+0000 (UTC)] DEBUG Received: 4,10,156
+[Fri Apr 11 2025 12:43:52 GMT+0000 (UTC)] DEBUG dp is moving to (10, 156).
+[Fri Apr 11 2025 12:43:53 GMT+0000 (UTC)] DEBUG Received: 21
+[Fri Apr 11 2025 12:43:53 GMT+0000 (UTC)] DEBUG group diff: 0-14,1-14
+[Fri Apr 11 2025 12:43:53 GMT+0000 (UTC)] DEBUG Received: 20,7296,11330,11430,11431,11432,72106,78123
+[Fri Apr 11 2025 12:43:53 GMT+0000 (UTC)] DEBUG Pushed 7 new spawns to 5571
+[Fri Apr 11 2025 12:44:03 GMT+0000 (UTC)] DEBUG Received: 4,20,150
+[Fri Apr 11 2025 12:44:03 GMT+0000 (UTC)] DEBUG dp is moving to (20, 150).
+[Fri Apr 11 2025 12:44:07 GMT+0000 (UTC)] DEBUG Received: 4,20,145
+[Fri Apr 11 2025 12:44:07 GMT+0000 (UTC)] DEBUG dp is moving to (20, 145).
+[Fri Apr 11 2025 12:44:07 GMT+0000 (UTC)] DEBUG Received: 15,157,120
+[Fri Apr 11 2025 12:44:07 GMT+0000 (UTC)] DEBUG group diff: 0-11,1-11,1-12,0-13,1-13
+[Fri Apr 11 2025 12:44:07 GMT+0000 (UTC)] DEBUG Received: 20,74100,74101,74103
+[Fri Apr 11 2025 12:44:07 GMT+0000 (UTC)] DEBUG Pushed 3 new spawns to 5571
+[Fri Apr 11 2025 12:44:10 GMT+0000 (UTC)] DEBUG Received: 4,147,113
+[Fri Apr 11 2025 12:44:10 GMT+0000 (UTC)] DEBUG dp is moving to (147, 113).
+[Fri Apr 11 2025 12:44:10 GMT+0000 (UTC)] DEBUG Received: 26,12
+[Fri Apr 11 2025 12:44:12 GMT+0000 (UTC)] DEBUG Received: 15,16,135
+[Fri Apr 11 2025 12:44:12 GMT+0000 (UTC)] DEBUG group diff: 4-8,5-8,4-9,4-10,5-10
+[Fri Apr 11 2025 12:44:12 GMT+0000 (UTC)] DEBUG Received: 20,11230,11231,11430,11431,11432,73110,73111,73112,73115,73116,73117,74113,74114,78123,78124,78129,78135
+[Fri Apr 11 2025 12:44:12 GMT+0000 (UTC)] DEBUG Pushed 17 new spawns to 5571
+[Fri Apr 11 2025 12:44:25 GMT+0000 (UTC)] DEBUG Received: 4,21,136
+[Fri Apr 11 2025 12:44:25 GMT+0000 (UTC)] DEBUG dp is moving to (21, 136).
+[Fri Apr 11 2025 12:44:26 GMT+0000 (UTC)] DEBUG Received: 4,23,135
+[Fri Apr 11 2025 12:44:26 GMT+0000 (UTC)] DEBUG dp is moving to (23, 135).
+[Fri Apr 11 2025 12:44:27 GMT+0000 (UTC)] DEBUG Received: 4,24,132
+[Fri Apr 11 2025 12:44:27 GMT+0000 (UTC)] DEBUG dp is moving to (24, 132).
+[Fri Apr 11 2025 12:44:27 GMT+0000 (UTC)] DEBUG Received: 21
+[Fri Apr 11 2025 12:44:27 GMT+0000 (UTC)] DEBUG group diff: 0-12,1-12,5-9
+[Fri Apr 11 2025 12:44:27 GMT+0000 (UTC)] DEBUG Received: 20,7392,7398,7399,71193,71197,73102,73104,73107,73108,73109
+[Fri Apr 11 2025 12:44:27 GMT+0000 (UTC)] DEBUG Pushed 10 new spawns to 5571
+[Fri Apr 11 2025 12:44:30 GMT+0000 (UTC)] DEBUG Received: 4,29,130
+[Fri Apr 11 2025 12:44:30 GMT+0000 (UTC)] DEBUG dp is moving to (29, 130).
+[Fri Apr 11 2025 12:44:31 GMT+0000 (UTC)] DEBUG Received: 21
+[Fri Apr 11 2025 12:44:31 GMT+0000 (UTC)] DEBUG group diff: 
+[Fri Apr 11 2025 12:44:31 GMT+0000 (UTC)] DEBUG Received: 20,11540,11541,71191,71194,71195,74118,74119,74120,74121,74122,711105
+[Fri Apr 11 2025 12:44:31 GMT+0000 (UTC)] DEBUG Pushed 11 new spawns to 5571
+[Fri Apr 11 2025 12:44:33 GMT+0000 (UTC)] DEBUG Received: 4,36,120
+[Fri Apr 11 2025 12:44:33 GMT+0000 (UTC)] DEBUG dp is moving to (36, 120).
+[Fri Apr 11 2025 12:44:35 GMT+0000 (UTC)] DEBUG Received: 21
+[Fri Apr 11 2025 12:44:35 GMT+0000 (UTC)] DEBUG group diff: 0-11,1-11,2-11
+[Fri Apr 11 2025 12:44:35 GMT+0000 (UTC)] DEBUG Received: 20,7579,7581,7582,7584,7588,7590,71180,71183,71185,71186,71187,71189
+[Fri Apr 11 2025 12:44:35 GMT+0000 (UTC)] DEBUG Pushed 12 new spawns to 5571
+[Fri Apr 11 2025 12:44:36 GMT+0000 (UTC)] DEBUG Received: 4,41,112
+[Fri Apr 11 2025 12:44:36 GMT+0000 (UTC)] DEBUG dp is moving to (41, 112).
+[Fri Apr 11 2025 12:44:37 GMT+0000 (UTC)] DEBUG Received: 6,71193
+[Fri Apr 11 2025 12:44:37 GMT+0000 (UTC)] DEBUG 71193 is now attacking 5571
+[Fri Apr 11 2025 12:44:37 GMT+0000 (UTC)] DEBUG Received: 9,71193
+[Fri Apr 11 2025 12:44:38 GMT+0000 (UTC)] DEBUG Received: 4,43,115
+[Fri Apr 11 2025 12:44:38 GMT+0000 (UTC)] DEBUG dp is moving to (43, 115).
+[Fri Apr 11 2025 12:44:38 GMT+0000 (UTC)] DEBUG Received: 4,48,109
+[Fri Apr 11 2025 12:44:38 GMT+0000 (UTC)] DEBUG dp is moving to (48, 109).
+[Fri Apr 11 2025 12:44:38 GMT+0000 (UTC)] DEBUG group diff: 0-10,1-10,2-10
+[Fri Apr 11 2025 12:44:39 GMT+0000 (UTC)] DEBUG Received: 9,71193
+[Fri Apr 11 2025 12:44:40 GMT+0000 (UTC)] DEBUG Received: 4,56,110
+[Fri Apr 11 2025 12:44:40 GMT+0000 (UTC)] DEBUG dp is moving to (56, 110).
+[Fri Apr 11 2025 12:44:40 GMT+0000 (UTC)] DEBUG group diff: 0-7,1-7,2-7,5-21
+[Fri Apr 11 2025 12:44:41 GMT+0000 (UTC)] DEBUG Received: 4,57,113
+[Fri Apr 11 2025 12:44:41 GMT+0000 (UTC)] DEBUG dp is moving to (57, 113).
+[Fri Apr 11 2025 12:44:41 GMT+0000 (UTC)] DEBUG group diff: 0-8,0-9,0-10
+[Fri Apr 11 2025 12:44:41 GMT+0000 (UTC)] DEBUG Received: 21
+[Fri Apr 11 2025 12:44:41 GMT+0000 (UTC)] DEBUG group diff: 0-8,0-9,0-10
+[Fri Apr 11 2025 12:44:43 GMT+0000 (UTC)] DEBUG Received: 9,71193
+[Fri Apr 11 2025 12:44:44 GMT+0000 (UTC)] DEBUG Received: 9,71193
+[Fri Apr 11 2025 12:44:44 GMT+0000 (UTC)] DEBUG Received: 4,81,116
+[Fri Apr 11 2025 12:44:44 GMT+0000 (UTC)] DEBUG dp is moving to (81, 116).
+[Fri Apr 11 2025 12:44:44 GMT+0000 (UTC)] DEBUG Received: 6,71195
+[Fri Apr 11 2025 12:44:44 GMT+0000 (UTC)] DEBUG 71195 is now attacking 5571
+[Fri Apr 11 2025 12:44:44 GMT+0000 (UTC)] DEBUG Received: 9,71195
+[Fri Apr 11 2025 12:44:45 GMT+0000 (UTC)] DEBUG Received: 4,76,119
+[Fri Apr 11 2025 12:44:45 GMT+0000 (UTC)] DEBUG dp is moving to (76, 119).
+[Fri Apr 11 2025 12:44:47 GMT+0000 (UTC)] DEBUG Received: 4,75,121
+[Fri Apr 11 2025 12:44:47 GMT+0000 (UTC)] DEBUG dp is moving to (75, 121).
+[Fri Apr 11 2025 12:44:47 GMT+0000 (UTC)] DEBUG group diff: 1-8,2-8,3-8
+[Fri Apr 11 2025 12:44:48 GMT+0000 (UTC)] DEBUG Received: 21
+[Fri Apr 11 2025 12:44:48 GMT+0000 (UTC)] DEBUG group diff: 1-8,2-8,3-8
+[Fri Apr 11 2025 12:44:48 GMT+0000 (UTC)] DEBUG Received: 20,11430,11431,11432,74100,74101,74103,74118,74119,74120,74121,74122,78123
+[Fri Apr 11 2025 12:44:48 GMT+0000 (UTC)] DEBUG Pushed 12 new spawns to 5571
+[Fri Apr 11 2025 12:44:49 GMT+0000 (UTC)] DEBUG Received: 4,66,129
+[Fri Apr 11 2025 12:44:49 GMT+0000 (UTC)] DEBUG dp is moving to (66, 129).
+[Fri Apr 11 2025 12:44:49 GMT+0000 (UTC)] DEBUG group diff: 1-8,2-8,3-8
+[Fri Apr 11 2025 12:44:49 GMT+0000 (UTC)] DEBUG Received: 6,11541
+[Fri Apr 11 2025 12:44:49 GMT+0000 (UTC)] DEBUG 11541 is now attacking 5571
+[Fri Apr 11 2025 12:44:50 GMT+0000 (UTC)] DEBUG Received: 9,11541
+[Fri Apr 11 2025 12:44:50 GMT+0000 (UTC)] DEBUG Received: 4,65,125
+[Fri Apr 11 2025 12:44:50 GMT+0000 (UTC)] DEBUG dp is moving to (65, 125).
+[Fri Apr 11 2025 12:44:51 GMT+0000 (UTC)] DEBUG Received: 15,127,120
+[Fri Apr 11 2025 12:44:51 GMT+0000 (UTC)] DEBUG 5571 REMOVED ATTACKER 11541
+[Fri Apr 11 2025 12:44:51 GMT+0000 (UTC)] DEBUG 5571 REMOVED ATTACKER 71193
+[Fri Apr 11 2025 12:44:51 GMT+0000 (UTC)] DEBUG 5571 REMOVED ATTACKER 71195
+[Fri Apr 11 2025 12:44:51 GMT+0000 (UTC)] DEBUG group diff: 1-9,2-9,1-10,1-11,2-11,3-11
+[Fri Apr 11 2025 12:44:51 GMT+0000 (UTC)] DEBUG Received: 20,7296,72106
+[Fri Apr 11 2025 12:44:51 GMT+0000 (UTC)] DEBUG Pushed 2 new spawns to 5571
+[Fri Apr 11 2025 12:44:52 GMT+0000 (UTC)] DEBUG group diff: 3-9,3-10,1-11,2-11,3-11,4-9
+[Fri Apr 11 2025 12:44:52 GMT+0000 (UTC)] DEBUG group diff: 1-11,2-11,3-11,4-9
+[Fri Apr 11 2025 12:44:57 GMT+0000 (UTC)] DEBUG Received: 4,126,119
+[Fri Apr 11 2025 12:44:57 GMT+0000 (UTC)] DEBUG dp is moving to (126, 119).
+[Fri Apr 11 2025 12:44:58 GMT+0000 (UTC)] DEBUG Received: 4,124,118
+[Fri Apr 11 2025 12:44:58 GMT+0000 (UTC)] DEBUG dp is moving to (124, 118).
+[Fri Apr 11 2025 12:45:00 GMT+0000 (UTC)] DEBUG Received: 4,121,117
+[Fri Apr 11 2025 12:45:00 GMT+0000 (UTC)] DEBUG dp is moving to (121, 117).
+[Fri Apr 11 2025 12:45:02 GMT+0000 (UTC)] DEBUG Received: 4,127,120
+[Fri Apr 11 2025 12:45:02 GMT+0000 (UTC)] DEBUG dp is moving to (127, 120).
+[Fri Apr 11 2025 12:45:02 GMT+0000 (UTC)] DEBUG Received: 6,74103
+[Fri Apr 11 2025 12:45:02 GMT+0000 (UTC)] DEBUG 74103 is now attacking 5571
+[Fri Apr 11 2025 12:45:02 GMT+0000 (UTC)] DEBUG Received: 9,74103
+[Fri Apr 11 2025 12:45:03 GMT+0000 (UTC)] DEBUG Received: 15,65,125
+[Fri Apr 11 2025 12:45:03 GMT+0000 (UTC)] DEBUG 5571 REMOVED ATTACKER 74103
+[Fri Apr 11 2025 12:45:03 GMT+0000 (UTC)] DEBUG group diff: 3-8,4-8,5-8,5-9,4-10,5-10
+[Fri Apr 11 2025 12:45:03 GMT+0000 (UTC)] DEBUG Received: 20,11230,11231,11430,11431,11432,71191,71194,71197,73104,74113,74114,74118,74119,74120,74121,74122,78123,711105
+[Fri Apr 11 2025 12:45:03 GMT+0000 (UTC)] DEBUG Pushed 18 new spawns to 5571
+[Fri Apr 11 2025 12:45:04 GMT+0000 (UTC)] DEBUG Received: 4,67,128
+[Fri Apr 11 2025 12:45:04 GMT+0000 (UTC)] DEBUG dp is moving to (67, 128).
+[Fri Apr 11 2025 12:45:07 GMT+0000 (UTC)] DEBUG Received: 4,67,133
+[Fri Apr 11 2025 12:45:07 GMT+0000 (UTC)] DEBUG dp is moving to (67, 133).
+[Fri Apr 11 2025 12:45:08 GMT+0000 (UTC)] DEBUG Received: 21
+[Fri Apr 11 2025 12:45:08 GMT+0000 (UTC)] DEBUG group diff: 1-9,2-9,3-9,4-9
+[Fri Apr 11 2025 12:45:08 GMT+0000 (UTC)] DEBUG Received: 20,98,75130,75132,75133,78124,78128,78129,78131,78135,78136
+[Fri Apr 11 2025 12:45:08 GMT+0000 (UTC)] DEBUG Pushed 10 new spawns to 5571
+[Fri Apr 11 2025 12:45:10 GMT+0000 (UTC)] DEBUG Received: 4,67,144
+[Fri Apr 11 2025 12:45:10 GMT+0000 (UTC)] DEBUG dp is moving to (67, 144).
+[Fri Apr 11 2025 12:45:11 GMT+0000 (UTC)] DEBUG Received: 26,23
+[Fri Apr 11 2025 12:45:12 GMT+0000 (UTC)] DEBUG Received: 4,67,145
+[Fri Apr 11 2025 12:45:12 GMT+0000 (UTC)] DEBUG dp is moving to (67, 145).
+[Fri Apr 11 2025 12:45:12 GMT+0000 (UTC)] DEBUG Received: 21
+[Fri Apr 11 2025 12:45:12 GMT+0000 (UTC)] DEBUG group diff: 1-10,2-10,3-10,5-24
+[Fri Apr 11 2025 12:45:12 GMT+0000 (UTC)] DEBUG Received: 20,1640,1641,11640,11641,11642,74143,74149,78140,78145,78153,78154,875164,8127186
+[Fri Apr 11 2025 12:45:12 GMT+0000 (UTC)] DEBUG Pushed 13 new spawns to 5571
+[Fri Apr 11 2025 12:45:17 GMT+0000 (UTC)] DEBUG Received: 7,78131
+[Fri Apr 11 2025 12:45:18 GMT+0000 (UTC)] DEBUG Received: 8,78131
+[Fri Apr 11 2025 12:45:18 GMT+0000 (UTC)] DEBUG 78131 is now attacking 5571
+[Fri Apr 11 2025 12:45:18 GMT+0000 (UTC)] DEBUG Received: 9,78131
+[Fri Apr 11 2025 12:45:19 GMT+0000 (UTC)] DEBUG Received: 8,78131
+[Fri Apr 11 2025 12:45:19 GMT+0000 (UTC)] DEBUG Received: 9,78131
+[Fri Apr 11 2025 12:45:19 GMT+0000 (UTC)] DEBUG Received: 8,78131
+[Fri Apr 11 2025 12:45:19 GMT+0000 (UTC)] DEBUG Received: 9,78131
+[Fri Apr 11 2025 12:45:20 GMT+0000 (UTC)] DEBUG Received: 8,78131
+[Fri Apr 11 2025 12:45:20 GMT+0000 (UTC)] DEBUG Received: 9,78131
+[Fri Apr 11 2025 12:45:21 GMT+0000 (UTC)] DEBUG Received: 8,78131
+[Fri Apr 11 2025 12:45:21 GMT+0000 (UTC)] DEBUG Received: 9,78131
+[Fri Apr 11 2025 12:45:22 GMT+0000 (UTC)] DEBUG Received: 8,78131
+[Fri Apr 11 2025 12:45:22 GMT+0000 (UTC)] DEBUG Received: 9,78131
+[Fri Apr 11 2025 12:45:23 GMT+0000 (UTC)] DEBUG Received: 8,78131
+[Fri Apr 11 2025 12:45:23 GMT+0000 (UTC)] DEBUG Received: 9,78131
+[Fri Apr 11 2025 12:45:23 GMT+0000 (UTC)] DEBUG Received: 8,78131
+[Fri Apr 11 2025 12:45:23 GMT+0000 (UTC)] DEBUG 5571 REMOVED ATTACKER 78131
+[Fri Apr 11 2025 12:45:23 GMT+0000 (UTC)] DEBUG Removed bat : 78131
+[Fri Apr 11 2025 12:45:26 GMT+0000 (UTC)] DEBUG Received: 4,62,149
+[Fri Apr 11 2025 12:45:26 GMT+0000 (UTC)] DEBUG dp is moving to (62, 149).
+[Fri Apr 11 2025 12:56:47 GMT+0000 (UTC)] INFO Starting BrowserQuest game server...
+path.exists is now called `fs.exists`.
+[Fri Apr 11 2025 12:56:47 GMT+0000 (UTC)] INFO world1 created (capacity: 200 players).
+[Fri Apr 11 2025 12:56:47 GMT+0000 (UTC)] INFO world2 created (capacity: 200 players).
+[Fri Apr 11 2025 12:56:47 GMT+0000 (UTC)] INFO world3 created (capacity: 200 players).
+[Fri Apr 11 2025 12:56:47 GMT+0000 (UTC)] INFO world4 created (capacity: 200 players).
+[Fri Apr 11 2025 12:56:47 GMT+0000 (UTC)] INFO world5 created (capacity: 200 players).
+[Fri Apr 11 2025 12:56:47 GMT+0000 (UTC)] INFO Server is listening on port 8000
+[Security] IP non détectable, connexion autorisée par défaut
+[Fri Apr 11 2025 13:02:47 GMT+0000 (UTC)] DEBUG Received: 0,dp,21,61
+[Fri Apr 11 2025 13:02:47 GMT+0000 (UTC)] INFO dp has joined world1
+[Fri Apr 11 2025 13:02:47 GMT+0000 (UTC)] DEBUG Received: 20,926,927,928,929,1020,1021,1022,1120,1121,1122,1220,1221,1222,1320,1321,1322,1820,1821,11920,11921,12120,12121,12220,810235,815222,818209,867220
+[Fri Apr 11 2025 13:02:47 GMT+0000 (UTC)] DEBUG Pushed 27 new spawns to 5630
+[Fri Apr 11 2025 13:12:01 GMT+0000 (UTC)] INFO Starting BrowserQuest game server...
+path.exists is now called `fs.exists`.
+[Fri Apr 11 2025 13:12:01 GMT+0000 (UTC)] INFO world1 created (capacity: 200 players).
+[Fri Apr 11 2025 13:12:01 GMT+0000 (UTC)] INFO world2 created (capacity: 200 players).
+[Fri Apr 11 2025 13:12:01 GMT+0000 (UTC)] INFO world3 created (capacity: 200 players).
+[Fri Apr 11 2025 13:12:01 GMT+0000 (UTC)] INFO world4 created (capacity: 200 players).
+[Fri Apr 11 2025 13:12:01 GMT+0000 (UTC)] INFO world5 created (capacity: 200 players).
+[Fri Apr 11 2025 13:12:01 GMT+0000 (UTC)] INFO Server is listening on port 8000
+[Security] IP non détectable, connexion autorisée par défaut
+[Fri Apr 11 2025 13:16:11 GMT+0000 (UTC)] DEBUG Received: 0,dp,21,61
+[Fri Apr 11 2025 13:16:11 GMT+0000 (UTC)] INFO dp has joined world1
+[Fri Apr 11 2025 13:16:11 GMT+0000 (UTC)] DEBUG Received: 20,926,927,928,1120,1121,1122,1220,1221,1222,1820,1821,11920,11921,12220,867220
+[Fri Apr 11 2025 13:16:11 GMT+0000 (UTC)] DEBUG Pushed 15 new spawns to 5850
+[Fri Apr 11 2025 13:19:13 GMT+0000 (UTC)] INFO Starting BrowserQuest game server...
+path.exists is now called `fs.exists`.
+[Fri Apr 11 2025 13:19:13 GMT+0000 (UTC)] INFO world1 created (capacity: 200 players).
+[Fri Apr 11 2025 13:19:13 GMT+0000 (UTC)] INFO world2 created (capacity: 200 players).
+[Fri Apr 11 2025 13:19:13 GMT+0000 (UTC)] INFO world3 created (capacity: 200 players).
+[Fri Apr 11 2025 13:19:13 GMT+0000 (UTC)] INFO world4 created (capacity: 200 players).
+[Fri Apr 11 2025 13:19:13 GMT+0000 (UTC)] INFO world5 created (capacity: 200 players).
+[Fri Apr 11 2025 13:19:13 GMT+0000 (UTC)] INFO Server is listening on port 8000
+[Fri Apr 11 2025 13:56:35 GMT+0000 (UTC)] INFO Starting BrowserQuest game server...
+path.exists is now called `fs.exists`.
+[Fri Apr 11 2025 13:56:35 GMT+0000 (UTC)] INFO world1 created (capacity: 200 players).
+[Fri Apr 11 2025 13:56:35 GMT+0000 (UTC)] INFO world2 created (capacity: 200 players).
+[Fri Apr 11 2025 13:56:35 GMT+0000 (UTC)] INFO world3 created (capacity: 200 players).
+[Fri Apr 11 2025 13:56:35 GMT+0000 (UTC)] INFO world4 created (capacity: 200 players).
+[Fri Apr 11 2025 13:56:35 GMT+0000 (UTC)] INFO world5 created (capacity: 200 players).
+[Fri Apr 11 2025 13:56:35 GMT+0000 (UTC)] INFO Server is listening on port 8000
+[Security] IP non détectable, connexion autorisée par défaut
+[Fri Apr 11 2025 14:00:17 GMT+0000 (UTC)] DEBUG Received: 0,dp,21,61
+[Fri Apr 11 2025 14:00:17 GMT+0000 (UTC)] INFO dp has joined world1
+[Fri Apr 11 2025 14:00:17 GMT+0000 (UTC)] DEBUG Received: 20,926,927,928,929,1020,1021,1022,1120,1121,1122,1220,1221,1222,1320,1321,1322,1820,1821,11920,11921,12120,12121,12220,810235,815222,818209,867220
+[Fri Apr 11 2025 14:00:17 GMT+0000 (UTC)] DEBUG Pushed 27 new spawns to 5370
+[Fri Apr 11 2025 14:15:17 GMT+0000 (UTC)] INFO Closing connection to 172.19.0.1. Error: Player was idle for too long
+[Fri Apr 11 2025 14:15:17 GMT+0000 (UTC)] INFO dp has left the game.
+[Fri Apr 11 2025 14:15:17 GMT+0000 (UTC)] DEBUG Removed warrior : 5370
+[Fri Apr 11 2025 14:26:21 GMT+0000 (UTC)] INFO Starting BrowserQuest game server...
+path.exists is now called `fs.exists`.
+[Fri Apr 11 2025 14:26:21 GMT+0000 (UTC)] INFO world1 created (capacity: 200 players).
+[Fri Apr 11 2025 14:26:21 GMT+0000 (UTC)] INFO world2 created (capacity: 200 players).
+[Fri Apr 11 2025 14:26:21 GMT+0000 (UTC)] INFO world3 created (capacity: 200 players).
+[Fri Apr 11 2025 14:26:21 GMT+0000 (UTC)] INFO world4 created (capacity: 200 players).
+[Fri Apr 11 2025 14:26:21 GMT+0000 (UTC)] INFO world5 created (capacity: 200 players).
+[Fri Apr 11 2025 14:26:21 GMT+0000 (UTC)] INFO Server is listening on port 8000
+[Security] IP non détectable, connexion autorisée par défaut
+[Fri Apr 11 2025 14:27:20 GMT+0000 (UTC)] DEBUG Received: 0,dp,21,61
+[Fri Apr 11 2025 14:27:20 GMT+0000 (UTC)] INFO dp has joined world1
+[Fri Apr 11 2025 14:27:20 GMT+0000 (UTC)] DEBUG Received: 20,929,931,1220,1221,1222,1320,1321,1322,1720,1721,11920,11921,12020,12021,12120,12121,810235,815222,815246
+[Fri Apr 11 2025 14:27:20 GMT+0000 (UTC)] DEBUG Pushed 19 new spawns to 5170
+[Fri Apr 11 2025 14:38:28 GMT+0000 (UTC)] INFO Starting BrowserQuest game server...
+path.exists is now called `fs.exists`.
+[Fri Apr 11 2025 14:38:28 GMT+0000 (UTC)] INFO world1 created (capacity: 200 players).
+[Fri Apr 11 2025 14:38:28 GMT+0000 (UTC)] INFO world2 created (capacity: 200 players).
+[Fri Apr 11 2025 14:38:28 GMT+0000 (UTC)] INFO world3 created (capacity: 200 players).
+[Fri Apr 11 2025 14:38:28 GMT+0000 (UTC)] INFO world4 created (capacity: 200 players).
+[Fri Apr 11 2025 14:38:28 GMT+0000 (UTC)] INFO world5 created (capacity: 200 players).
+[Fri Apr 11 2025 14:38:28 GMT+0000 (UTC)] INFO Server is listening on port 8000
+[Security] IP non détectable, connexion autorisée par défaut
+[Fri Apr 11 2025 14:41:09 GMT+0000 (UTC)] DEBUG Received: 0,dp,21,61
+[Fri Apr 11 2025 14:41:09 GMT+0000 (UTC)] INFO dp has joined world1
+[Fri Apr 11 2025 14:41:09 GMT+0000 (UTC)] DEBUG Received: 20,924,925,927,932,933,1020,1021,1022,1120,1121,1122,1220,1221,1222,1320,1321,1322,72181,72182,72183,72184,84195,87195,815222,818209,837200,841195,847195
+[Fri Apr 11 2025 14:41:09 GMT+0000 (UTC)] DEBUG Pushed 28 new spawns to 5810

@@ -1,8 +1,49 @@
+# services:
+#   browserquest:
+#     build: .
+#     ports:
+#       - "8000:8000"
+#     volumes:
+#       - .:/app
+#     container_name: browserquest
+
+#   fail2ban:
+#     image: crazymax/fail2ban:latest
+#     container_name: fail2ban
+#     restart: always
+#     cap_add:
+#       - NET_ADMIN
+#       - NET_RAW
+#     volumes:
+#       - ./fail2ban:/data
+#       - ./logs:/var/log/node
+#     environment:
+#       - F2B_LOG_LEVEL=INFO
+#       - F2B_LOG_TARGET=STDOUT
+
+version: "3.9"
+
 services:
   browserquest:
     build: .
     ports:
       - "8000:8000"
     volumes:
-      - .:/app
+      - ./logs:/app/logs
     container_name: browserquest
+
+  fail2ban:
+    image: crazymax/fail2ban:latest
+    container_name: fail2ban
+    restart: always
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    volumes:
+      - ./fail2ban:/data
+      - ./logs:/var/log/node
+      - ./filter.d:/etc/fail2ban/filter.d
+      
+    environment:
+      - F2B_LOG_LEVEL=INFO
+      - F2B_LOG_TARGET=STDOUT

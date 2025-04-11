@@ -8,10 +8,38 @@ var cls = require("./lib/class"),
     Utils = require('./utils'),
     _ = require('underscore'),
     BISON = require('bison'),
+    sanitizer = require('sanitizer'), 
     WS = {},
     useBison = false;
 
 module.exports = WS;
+
+// Fonction de validation des messages
+function validateMessage(message) {
+    // Si le message n'est pas un objet, le rejeter
+    if (!message || typeof message !== 'object') {
+        return false;
+    }
+    
+    // Assainir les chaînes de caractères dans le message
+    if (message.message && typeof message.message === 'string') {
+        message.message = sanitizer.sanitize(message.message);
+    }
+    
+    // Vérifier que les coordonnées sont des nombres si présentes
+    if (message.x !== undefined && typeof message.x !== 'number') return false;
+    if (message.y !== undefined && typeof message.y !== 'number') return false;
+    
+    // Valider le type de message si présent
+    if (message.type) {
+        var validTypes = ['move', 'loot', 'attack', 'chat', 'teleport', 'trade', 'who', 'equipment'];
+        if (validTypes.indexOf(message.type) === -1) {
+            return false;
+        }
+    }
+    
+    return true;
+}
 
 
 /**
@@ -206,20 +234,52 @@ WS.worlizeWebSocketConnection = Connection.extend({
         
         this._super(id, connection, server);
         
+        // this._connection.on('message', function(message) {
+        //     if(self.listen_callback) {
+        //         if(message.type === 'utf8') {
+        //             if(useBison) {
+        //                 self.listen_callback(BISON.decode(message.utf8Data));
+        //             } else {
+        //                 try {
+        //                     self.listen_callback(JSON.parse(message.utf8Data));
+        //                 } catch(e) {
+        //                     if(e instanceof SyntaxError) {
+        //                         self.close("Received message was not valid JSON.");
+        //                     } else {
+        //                         throw e;
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // });
+
         this._connection.on('message', function(message) {
             if(self.listen_callback) {
                 if(message.type === 'utf8') {
-                    if(useBison) {
-                        self.listen_callback(BISON.decode(message.utf8Data));
-                    } else {
-                        try {
-                            self.listen_callback(JSON.parse(message.utf8Data));
-                        } catch(e) {
-                            if(e instanceof SyntaxError) {
-                                self.close("Received message was not valid JSON.");
-                            } else {
-                                throw e;
-                            }
+                    var decodedMessage;
+                    
+                    try {
+                        // Décoder le message
+                        if(useBison) {
+                            decodedMessage = BISON.decode(message.utf8Data);
+                        } else {
+                            decodedMessage = JSON.parse(message.utf8Data);
+                        }
+                        
+                        // Valider le message
+                        if(!validateMessage(decodedMessage)) {
+                            log.info("Message invalide rejeté de " + self._connection.remoteAddress);
+                            return;
+                        }
+                        
+                        // Passer le message validé au callback
+                        self.listen_callback(decodedMessage);
+                    } catch(e) {
+                        if(e instanceof SyntaxError) {
+                            self.close("Received message was not valid JSON.");
+                        } else {
+                            throw e;
                         }
                     }
                 }
@@ -254,6 +314,30 @@ WS.worlizeWebSocketConnection = Connection.extend({
  * Connection class for websocket-server (miksago)
  * https://github.com/miksago/node-websocket-server
  */
+// WS.miksagoWebSocketConnection = Connection.extend({
+//     init: function(id, connection, server) {
+//         var self = this;
+        
+//         this._super(id, connection, server);
+        
+//         this._connection.addListener("message", function(message) {
+//             if(self.listen_callback) {
+//                 if(useBison) {
+//                     self.listen_callback(BISON.decode(message));
+//                 } else {
+//                     self.listen_callback(JSON.parse(message));
+//                 }
+//             }
+//         });
+        
+//         this._connection.on('close', function(connection) {
+//             if(self.close_callback) {
+//                 self.close_callback();
+//             }
+//             delete self._server.removeConnection(self.id);
+//         });
+//     },
+
 WS.miksagoWebSocketConnection = Connection.extend({
     init: function(id, connection, server) {
         var self = this;
@@ -262,10 +346,29 @@ WS.miksagoWebSocketConnection = Connection.extend({
         
         this._connection.addListener("message", function(message) {
             if(self.listen_callback) {
-                if(useBison) {
-                    self.listen_callback(BISON.decode(message));
-                } else {
-                    self.listen_callback(JSON.parse(message));
+                try {
+                    // Décoder le message
+                    var decodedMessage;
+                    if(useBison) {
+                        decodedMessage = BISON.decode(message);
+                    } else {
+                        decodedMessage = JSON.parse(message);
+                    }
+                    
+                    // Valider le message
+                    if(!validateMessage(decodedMessage)) {
+                        log.info("Message invalide rejeté de " + self._connection.remoteAddress);
+                        return;
+                    }
+                    
+                    // Passer le message validé au callback
+                    self.listen_callback(decodedMessage);
+                } catch(e) {
+                    if(e instanceof SyntaxError) {
+                        self.close("Received message was not valid JSON.");
+                    } else {
+                        throw e;
+                    }
                 }
             }
         });
