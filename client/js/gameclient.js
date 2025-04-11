@@ -103,6 +103,9 @@ define(['player', 'entityfactory', 'lib/bison'], function(Player, EntityFactory,
                             self.disconnected_callback("The connection to BrowserQuest has been lost");
                         }
                     }
+                    setTimeout(() => {
+                        location.reload();
+                    }, 3000);
                 };
             }
         },
