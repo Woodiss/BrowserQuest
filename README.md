@@ -48,12 +48,22 @@ docker-compose up --build
   > Approche envisagée : centralisation des données de session dans un conteneur Memcached.
   > Statut : testé, mais trop complexe à intégrer dans les délais impartis.
 
-- **Système de sécurité automatisé (type fail2ban)**
-  > Objectif : détecter les comportements suspects (flood, brute-force...) et bloquer les IP via un container dédié.
-  > Idée : fail2ban dans un container relié à des logs exposés par les autres services.
-  > Statut : prototype en cours mais non finalisé. (check branch DP)
-
 - **Détection active des crash serveurs pour migration transparente**
   > Objectif : supervision continue + migration automatique des joueurs en cas de panne.
   > Idée : observer les connexions WebSocket côté client et re-router sur un autre serveur sans écran de chargement.
   > Statut : testé, mais trop complexe à intégrer dans les délais impartis.
+
+- **Déploiement Kubernetes (Haute Disponibilité et Failover)**
+  > Objectif : garantir la continuité du service BrowserQuest en cas de montée en charge ou de panne d'un serveur.
+  > Idée : utiliser Kubernetes pour automatiser le déploiement, la gestion du scaling (nombre de pods) et le redémarrage automatique en cas de défaillance.
+  > Emplacement : branch Devanandhan dossier /K8s.
+  > Déploiements partiels créés, mais pas de montée en production.
+  > Besoin de corriger les configurations réseau et les services exposés.
+  > Statut : prototype amorcé mais non finalisé
+
+- **Sécurisation et protection contre les spams**
+  > Objectif : renforcer la sécurité de l'application et éviter les spams ainsi que les injections via le chat.
+  > Idée : Sécurisation et optimisation du code pour éviter les injections via le chat de l'app et sécuriser l'app des spams.
+  > Emplacement : racine du projet pour Fail2Ban (branche DP) et dossier Server/js pour security.js et main.js.
+  > Modifications : sécurisation et optimisation du code pour filtrer les messages du chat et prévenir les attaques par injection dans le fichier WS.js, création du fichier server/js/security.js pour la logique de sécurité et son utilisation dans main.js.
+  > Statut : Fail2ban testé se lance, mais impossible d'avoir le statut et ainsi ban les utilisateurs qui spams.
